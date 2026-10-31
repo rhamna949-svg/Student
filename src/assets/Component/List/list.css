@@ -1,0 +1,148 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.student-list {
+  width: 95%;
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px #25243a08;
+  overflow-x: auto;
+}
+
+.student-list h2 {
+  text-align: center;
+  color: #25213b;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+/* Table */
+.student-list table {
+  width: 100%;
+  min-width: 850px;
+  border-collapse: collapse;
+}
+
+.student-list th {
+  background: #6c4cff;
+  color: white;
+  padding: 14px 10px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.student-list td {
+  padding: 13px 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.student-list tbody tr:hover {
+  background: #f8f7ff;
+}
+
+/* Action Buttons */
+.actions {
+  white-space: nowrap;
+}
+
+.student-list button {
+  width: 65px;
+  padding: 9px 0;
+  margin: 3px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.edit-btn {
+  background: green;
+}
+
+.edit-btn:hover {
+  background: #006400;
+}
+
+.delete-btn {
+  background: red;
+}
+
+.delete-btn:hover {
+  background: #c90000;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .student-list {
+    width: 94%;
+    margin: 30px auto;
+    padding: 18px;
+  }
+
+  .student-list h2 {
+    font-size: 22px;
+  }
+
+  .student-list table {
+    min-width: 800px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .student-list {
+    width: 94%;
+    margin: 22px auto;
+    padding: 14px;
+    border-radius: 10px;
+  }
+
+  .student-list h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+
+  .student-list table {
+    min-width: 780px;
+  }
+
+  .student-list th {
+    padding: 12px 8px;
+    font-size: 12px;
+  }
+
+  .student-list td {
+    padding: 11px 8px;
+    font-size: 12px;
+  }
+
+  .student-list button {
+    width: 58px;
+    padding: 8px 0;
+    font-size: 11px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 360px) {
+  .student-list {
+    width: 96%;
+    padding: 10px;
+  }
+
+  .student-list h2 {
+    font-size: 18px;
+  }
+}
+
